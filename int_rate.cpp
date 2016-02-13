@@ -1,4 +1,4 @@
-```cpp
+```tcc
 //
 //  int_rate.cpp
 //  Simple_int
