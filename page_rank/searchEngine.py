@@ -3,19 +3,20 @@
 import urllib2
 from BeautifulSoup import *
 from urlparse import urljoin
+from pysqlite2 import dbapi2 as sqlite
 
 ignoreWords = set(['the','of','and','it','to','a','in','is','in','this','too','for'])
 
 class webCrawler:
     
     def __init__(self, database):
-        pass
+        self.con=sqlite.connect(database)
 
     def __del__(self):
-        pass
+        self.con.close()
 
     def dbcommit(self):
-        pass
+        self.con.commit()
 
     def getEntryId(self, table, field, value, createnew=True):
         return None
