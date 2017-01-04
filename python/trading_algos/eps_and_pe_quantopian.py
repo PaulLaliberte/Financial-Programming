@@ -1,9 +1,14 @@
 #NOTE: THese algorithms only run on the Quantopian IDE.
 
 """
+    Goal: Minimize risk, i.e. only take a position with highest probability
+          of succedding.
+
     Strategy: Short stocks with a low p/e and a high eps.
               Get out of positions if stocks no longer pass screening.
-    See, ,for results.
+
+    See, https://goo.gl/4KSlfk ,for results. Result time period: ~ 2011 - 2012.
+    Similiar backtesting results for any dates
 """
 
 from quantopian.algorithm import attach_pipeline, pipeline_output
