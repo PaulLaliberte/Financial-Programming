@@ -1,4 +1,3 @@
-```python3
 # -*- coding: utf-8 -*-
 """
 @author: Paullaliberte
@@ -71,4 +70,3 @@ plt.xlabel("option inner value")
 plt.ylabel("frequency")
 plt.ylim(0, 50000)
 plt.show()
-```
